@@ -48,3 +48,9 @@
     color: #0d6efd;
 
 }
+
+.nav-element{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,7 +1,6 @@
 import { FcClock } from "react-icons/fc";
 import { IoCallSharp } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md";
-import { IoIosLogOut } from "react-icons/io";
 
 import React from "react";
 

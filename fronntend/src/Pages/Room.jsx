@@ -2,6 +2,7 @@ import React, { useEffect, useCallback, useState } from "react";
 import ReactPlayer from "react-player";
 import peer from "../service/peer";
 import { useSocket } from "../Context/SocketProvider.jsx";
+import "./Room.css";
 
 const RoomPage = () => {
   const socket = useSocket();
@@ -109,35 +110,45 @@ const RoomPage = () => {
   ]);
 
   return (
-    <div>
+    <div className="calling-room-card">
       <h1>Room Page</h1>
       <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
-      {myStream && <button onClick={sendStreams}>Send Stream</button>}
-      {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
       {myStream && (
-        <>
-          <h1>My Stream</h1>
-          <ReactPlayer
-            playing
-            muted
-            height="100px"
-            width="200px"
-            url={myStream}
-          />
-        </>
+        <button className="btn btn-primary button1" onClick={sendStreams}>
+          Send Stream
+        </button>
       )}
-      {remoteStream && (
-        <>
-          <h1>Remote Stream</h1>
-          <ReactPlayer
-            playing
-            muted
-            height="100px"
-            width="200px"
-            url={remoteStream}
-          />
-        </>
+      {remoteSocketId && (
+        <button className="btn btn-primary button1" onClick={handleCallUser}>
+          CALL
+        </button>
       )}
+      <div className="streme-video">
+        {myStream && (
+          <div className="inside-flex">
+            <h1>My Stream</h1>
+            <ReactPlayer
+              playing
+              muted
+              height="400px"
+              width="400px"
+              url={myStream}
+            />
+          </div>
+        )}
+        {remoteStream && (
+          <div className="inside-flex">
+            <h1>Remote Stream</h1>
+            <ReactPlayer
+              playing
+              muted
+              height="400px"
+              width="400px"
+              url={remoteStream}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
