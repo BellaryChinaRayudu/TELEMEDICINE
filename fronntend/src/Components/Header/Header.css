@@ -1,0 +1,50 @@
+.headerflex{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:start;
+    cursor: pointer;
+}
+
+.header-item-spacing{
+   
+    margin: 20px;
+}
+
+.header-bg{
+    width:100vw;
+    height: 100px;
+    background-color: aliceblue
+   
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+}
+.blue-line {
+    border: none;
+    border-top: 3px solid blue; /* Thickness and color of the line */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.Home-card-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+.card-space{
+    margin-left: 30px;
+}
+.card-frist-heading{
+    font-size: 20px;
+    color: #0d6efd;
+
+}

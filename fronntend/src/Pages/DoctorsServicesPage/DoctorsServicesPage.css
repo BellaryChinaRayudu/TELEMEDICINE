@@ -1,0 +1,53 @@
+.doctorsServicepage{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(206, 213, 219);
+    align-items: center;
+    border:none;
+}
+
+.center-card{
+    background-color: transparent;
+    color: gainsboro;
+    text-align: center;
+    border:none;
+    font-weight: 500;
+    
+}
+.icon-sizing{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    color:rgb(27, 67, 249);
+}
+.icon-sizing1{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    color:rgb(27, 67, 249);
+}
+.icon-sizing2{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    margin-left: 240px;
+    margin-bottom: 10px;
+    color:rgb(27, 67, 249);
+}
+.icontext{
+    color: rgb(103, 97, 97);
+}
+
+.icontextparagraph{
+    color: rgb(70, 68, 68);
+}
